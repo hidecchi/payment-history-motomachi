@@ -15,9 +15,10 @@ export default {
 		}
 
 		const body = await request.text();
+		const signature = request.headers.get('x-square-hmacsha256-signature') ?? '';
 		const valid = await WebhooksHelper.verifySignature({
 			requestBody: body,
-			signatureHeader: request.headers.get('x-square-hmacsha256-signature') ?? '',
+			signatureHeader: signature,
 			signatureKey: env.SQUARE_WEBHOOK_SIGNATURE_KEY,
 			notificationUrl: env.SQUARE_WEBHOOK_URL,
 		});
