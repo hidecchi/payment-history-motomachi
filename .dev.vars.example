@@ -1,0 +1,8 @@
+SQUARE_ACCESS_TOKEN=
+SQUARE_WEBHOOK_SIGNATURE_KEY=
+# Square の Webhook に登録する通知 URL と、完全に同じ文字列にする
+SQUARE_WEBHOOK_URL=https://payment-history-motomachi.hidecchi.workers.dev/webhooks/square
+# 店舗を指定する場合だけ。未設定なら Square のメイン店舗です。
+# SQUARE_LOCATION_ID=
+# サンドボックスを使う場合
+# SQUARE_API_BASE=https://connect.squareupsandbox.com

@@ -10,7 +10,16 @@
 	"observability": {
 		"enabled": true
 	},
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	"vars": {
+		"SQUARE_API_BASE": "https://connect.squareup.com"
+	},
+	"r2_buckets": [
+		{
+			"binding": "PAYMENT_HISTORY",
+			"bucket_name": "payment-history-motomachi"
+		}
+	]
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

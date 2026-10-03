@@ -1,0 +1,6 @@
+interface Env {
+	SQUARE_ACCESS_TOKEN?: string;
+	SQUARE_LOCATION_ID?: string;
+	SQUARE_WEBHOOK_SIGNATURE_KEY?: string;
+	SQUARE_WEBHOOK_URL?: string;
+}
