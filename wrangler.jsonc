@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "payment-history-motomachi",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-03",
+  "observability": {
+    "enabled": true
+  }
+}
