@@ -90,5 +90,6 @@ export async function saveLatestPayments(bucket: R2Bucket, options: SquareClient
 			cacheControl: 'public, max-age=10',
 		},
 	});
+
 	return saved;
 }
