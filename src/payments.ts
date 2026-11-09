@@ -37,7 +37,7 @@ type SquareClientOptions = {
 };
 
 function toSavedPayment(payment: SquarePayment): SavedPayment | null {
-	if (payment.status === 'CANCELED') {
+	if (payment.status !== 'COMPLETED') {
 		return null;
 	}
 	const money = payment.total_money ?? payment.amount_money;
